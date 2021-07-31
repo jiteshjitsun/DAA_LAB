@@ -19,6 +19,7 @@ int main()
         }
         cin >> k;
         
+        // binary Search
         int l=0,h=n-1,mid;
         while(l<=h)
         {
