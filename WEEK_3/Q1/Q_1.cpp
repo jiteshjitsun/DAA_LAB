@@ -14,6 +14,8 @@ int main() {
         {
             cin >> arr[i];
         }
+
+        // insertion sort
         for(int i=1; i<n; i++)
         {
             int temp = arr[i];
