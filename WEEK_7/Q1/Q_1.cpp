@@ -30,7 +30,6 @@ int main() {
             int next = it.first;
             int nextDist = it.second;
             if(dis[next] > dis[prev]+nextDist){
-                cout<<"hello";
                 dis[next] = dis[prev] + nextDist;
                 pq.push({dis[next], next});
             }

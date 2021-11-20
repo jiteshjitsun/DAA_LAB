@@ -23,8 +23,6 @@ int main() {
         edges.push_back(node(u,v,wt));
     }
 
-    
-
     int src;
     cin>>src;
     int inf = 1000000;
