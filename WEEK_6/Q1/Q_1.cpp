@@ -5,14 +5,14 @@ using namespace std;
 bool dfs(vector<int>& vis, int src, int des, vector<int> adj1[]) {
     vis[src] = 1;
     
-        for(auto it:adj1[src]) {
-            if(it==des)return true;
-            if(!vis[it]){
-               if(dfs(vis,it,des,adj1))
-               {
-                   return true;
-               }
+    for(auto it:adj1[src]) {
+        if(it==des)return true;
+        if(!vis[it]){
+            if(dfs(vis,it,des,adj1))
+            {
+                return true;
             }
+        }
     }
     return false;
 }
