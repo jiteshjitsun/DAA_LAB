@@ -33,6 +33,7 @@ void maxVal(int val[],int wt[], int n,int w) {
         else {
             int remain = w-curwt;
             profit += (m[i].value/(double)m[i].weight) * (double)remain;
+            break;
         }
     }
 
